@@ -1,0 +1,39 @@
+Titanic Data
+========================================================
+author: Nico Frisch 
+date: 13.08.2020
+autosize: true
+
+Titanic Data
+========================================================
+
+The dramatic sinking of the Cruise Ship Titanic is one of the most tragic and sad histories of our time.
+
+This Shiny App offers you interesting statistics about the incident.
+
+The Data
+========================================================
+
+For the application we used the Titanic data set of the R datasets package, which features some basic infos about every passenger and if they survived or not.
+```{r, echo=FALSE}
+str(Titanic)
+```
+
+How to use
+========================================================
+
+Simply choose the options on the left of the window and click 'submit' to see the results.
+
+```{r, echo=FALSE}
+Titanic <- as.data.frame(Titanic)
+Titanic <- Titanic[rep(1:nrow(Titanic), Titanic$Freq), -5]
+
+library(ggplot2)
+
+gg <- ggplot(data = Titanic) +
+        geom_histogram(aes(x = Survived, fill = Sex), stat = "count")
+gg
+```
+
+Have Fun!
+========================================================
