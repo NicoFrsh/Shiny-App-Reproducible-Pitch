@@ -5,12 +5,12 @@ shinyUI(fluidPage(
     titlePanel("Titanic Data"),
 
     sidebarLayout(
-        sidebarPanel(
-            checkboxInput("details", "Show Details", value = TRUE),
+        sidebarPanel("Choose options to specifiy the passenger group and click 'Submit'",
             selectInput("sex", "Select Sex", choices = c("All", "Male","Female")),
             selectInput("age", "Select Age", choices = c("All", "Child","Adult")),
             selectInput("class", "Select Class", 
                         choices = c("All", "3rd","2nd","1st","Crew")),
+            checkboxInput("details", "Show Details", value = TRUE),
             submitButton("Submit")
         ),
 
