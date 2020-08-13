@@ -7,9 +7,9 @@ autosize: true
 Titanic Data
 ========================================================
 
-The dramatic sinking of the Cruise Ship Titanic is one of the most tragic and sad histories of our time.
+The dramatic sinking of the Cruise Ship Titanic is one of the most tragic stories of our time.
 
-This Shiny App offers you interesting statistics about the incident.
+This Shiny App offers you interesting statistics about the sad incident.
 
 The Data
 ========================================================
